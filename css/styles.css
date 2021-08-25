@@ -199,6 +199,112 @@ ul {
   width: 100%;
 }
 
+.animacion-uno {
+  margin-top: 200px;
+  position: relative;
+  -webkit-transition: all 1s 0.5s ease-in-out;
+  transition: all 1s 0.5s ease-in-out;
+}
+
+.final-uno {
+  margin-top: 0px;
+}
+
+.cover-header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  z-index: 9099;
+}
+
+.animacion-dos {
+  -webkit-transition: all 1.8s ease-in-out;
+  transition: all 1.8s ease-in-out;
+}
+
+.final-dos {
+  height: 0px;
+}
+
+.swiper-button-next {
+  left: 80% !important;
+  top: 60% !important;
+}
+
+.swiper-button-prev {
+  left: 20% !important;
+  top: 60% !important;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    left: 5px;
+  }
+  50% {
+    left: 0px;
+  }
+  100% {
+    left: 5px;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    left: 5px;
+  }
+  50% {
+    left: 0px;
+  }
+  100% {
+    left: 5px;
+  }
+}
+
+@-webkit-keyframes bounce2 {
+  0% {
+    right: 5px;
+  }
+  50% {
+    right: 0px;
+  }
+  100% {
+    right: 5px;
+  }
+}
+
+@keyframes bounce2 {
+  0% {
+    right: 5px;
+  }
+  50% {
+    right: 0px;
+  }
+  100% {
+    right: 5px;
+  }
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 1.2rem !important;
+  color: white !important;
+}
+
+.swiper-button-next::after {
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
+  position: absolute;
+}
+
+.swiper-button-prev:after {
+  -webkit-animation: bounce2 1s infinite;
+          animation: bounce2 1s infinite;
+  position: absolute;
+}
+
 @media (min-width: 1024px) {
   .flotante-logo {
     top: 60px;
@@ -213,16 +319,13 @@ ul {
     top: 60px;
   }
   .flotante-redes {
-    bottom: 100px;
+    bottom: 80px;
     right: 100px;
     margin-right: 0px;
   }
   .flotante-copy {
     display: block;
   }
-}
-
-@media (min-width: 1024px) {
   .flotante-menu {
     display: none;
   }
