@@ -31,6 +31,9 @@ $color-negro: #000;
 
 body {
   overflow: hidden;
+  font-family: $fuente-principal;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
 p,
@@ -41,7 +44,6 @@ h4,
 h5,
 h6 {
   color: $color-blanco;
-  font-family: $fuente-principal;
   font-weight: inherit;
 }
 a {
@@ -185,6 +187,7 @@ ul {
   top: 60% !important;
 }
 
+//ANIMATION FLECHAS HEADER PRINCIPAL
 @keyframes bounce {
   0% {
     left: 5px;
@@ -223,8 +226,82 @@ ul {
   position: absolute;
 }
 
+.menu-movil {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 999999;
+  background: white;
+  display: none;
+  .barra-superior {
+    width: 100%;
+    padding: 20px 20px 0px;
+    @include flexbox(row, center, space-between);
+  }
+  img {
+    width: 15px;
+    height: 40px;
+  }
+  .flotante-menu-movil {
+    height: 24px;
+    width: 22px;
+    @include flexbox(column, flex-start, flex-start);
+    position: relative;
+    .linea-menu {
+      width: 90%;
+      height: 2px;
+      background: black;
+      margin: 3px 0px;
+      position: absolute;
+      transform: rotate(45deg);
+    }
+    .linea-menu:nth-child(2) {
+      transform: rotate(-45deg);
+    }
+  }
+  .contenido-nav-movil {
+    height: calc(100% - 74px);
+  }
+  .lista-nav-movil {
+    width: 100%;
+    height: 100%;
+    @include flexbox(column, center, center);
+  }
+  .link-nav {
+    width: 100%;
+    padding: 15px;
+    @include flexbox(row, center, center);
+    text-transform: capitalize;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+  }
+}
+
 //QUERYS HEADER PAGINA PRINCIPAL
+@media (min-width: 768px) {
+  .flotante-logo {
+    top: 40px;
+    left: 40px;
+  }
+  .flotante-menu {
+    top: 40px;
+    right: 40px;
+  }
+  .menu-movil {
+    .barra-superior {
+      padding: 40px 40px 0px;
+    }
+    .contenido-nav-movil {
+      height: calc(100% - 96px);
+    }
+  }
+}
 @media (min-width: 1024px) {
+  .menu-movil {
+    display: none;
+  }
   .flotante-logo {
     top: 60px;
     left: 100px;
@@ -255,7 +332,6 @@ ul {
     right: 100px;
     top: 80px;
     display: block;
-    padding: 20px;
   }
   .lista-nav {
     width: 280px;
