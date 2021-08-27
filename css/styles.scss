@@ -4,7 +4,6 @@
   src: url("../fonts/Cardo-Regular.ttf");
   src: url("../fonts/Cardo-Bold.ttf");
   font-display: fallback;
-  font-weight: 400;
 }
 $fuente-principal: "Cardo";
 
@@ -33,6 +32,7 @@ body {
   overflow-x: hidden;
   font-family: $fuente-principal;
   background: black;
+  font-weight: bold;
 }
 
 p,
@@ -71,7 +71,16 @@ img {
   margin: 0 auto;
   max-width: 1024px;
 }
+.texto-1,
+.texto-2 {
+  transition: all 0.2s ease-in-out;
+}
 
+.copy:hover {
+  .texto-1 {
+    margin-top: -20px;
+  }
+}
 //INICIO CONTENIDO PRINCIPAL
 
 //HEADER PAGINA PRINCIPAL
@@ -421,6 +430,34 @@ img {
     color: white;
     font-size: 0.8rem;
   }
+  .flecha-down-flotante {
+    position: relative;
+    bottom: 100px;
+    margin: 0 auto;
+    width: 50px;
+    height: 55px;
+    display: block;
+    z-index: 99;
+    @include flexbox(column, center, center);
+    font-size: clamp(0.7rem, 1.2vw, 1rem);
+    color: white;
+    text-transform: capitalize;
+    i {
+      position: relative;
+      animation: bounce3 1s infinite;
+    }
+  }
+}
+@keyframes bounce3 {
+  0% {
+    top: 5px;
+  }
+  50% {
+    top: 0px;
+  }
+  100% {
+    top: 5px;
+  }
 }
 .headers-secundarios:after {
   content: "";
@@ -526,6 +563,13 @@ img {
     padding-bottom: 50px;
   }
 }
+.swiper-pagination-bullet {
+  background: white;
+  opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
 //INICIO SECCION MEDIA
 @media (min-width: 1024px) {
   .seccion-media {
@@ -613,7 +657,6 @@ img {
     .copy {
       @include flexbox(column, flex-start, flex-start);
       height: 20px;
-      width: 80px;
       overflow: hidden;
     }
     .texto-copy {
@@ -622,6 +665,50 @@ img {
       font-weight: bold;
       height: 20px;
       width: 100%;
+    }
+    .fuerte {
+      text-decoration: underline;
+      font-style: italic;
+    }
+  }
+}
+
+//FLOTANTES
+
+.flotante-up {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  @include flexbox(row, center, center);
+  i {
+    position: relative;
+    font-size: 0.7rem;
+    animation: bounce4 1s infinite;
+  }
+}
+@keyframes bounce4 {
+  0% {
+    bottom: 5px;
+  }
+  50% {
+    bottom: -5px;
+  }
+  100% {
+    bottom: 5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .flotante-up {
+    width: 50px;
+    height: 50px;
+    i {
+      font-size: 1.1rem;
     }
   }
 }

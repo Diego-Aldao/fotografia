@@ -13,10 +13,10 @@
   </head>
   <body>
     <header class="headers-secundarios">
-      <nav class="navegacion-paginas-secundarias">
-        <div class="logo">
+      <nav class="navegacion-paginas-secundarias" id="inicio">
+        <a href="./index.html" class="logo">
           <img src="./images/logo_light.png" alt="" />
-        </div>
+        </a>
         <div class="menu-movil-pag-sec">
           <span class="linea-menu"></span><span class="linea-menu"></span
           ><span class="linea-menu"></span>
@@ -24,9 +24,13 @@
         <div class="menu-desktop-pag-sec oculto">
           <ul class="links-menu-desktop">
             <li class="link-menu-desktop">trabajos</li>
-            <li class="link-menu-desktop">nosotros</li>
-            <li class="link-menu-desktop">blog</li>
-            <li class="link-menu-desktop">contacto</li>
+            <li class="link-menu-desktop">
+              <a href="./nosotros.html">nosotros</a>
+            </li>
+            <li class="link-menu-desktop"><a href="./blog.html">blog</a></li>
+            <li class="link-menu-desktop">
+              <a href="./contacto.html">contacto</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -34,8 +38,12 @@
         <h1 class="titulo">audi RS7</h1>
         <span class="año-secundario">2021</span>
       </div>
+      <a href="#contenido-principal" class="flecha-down-flotante">
+        <p class="textos-comunes">iniciar</p>
+        <i class="fas fa-chevron-down"></i>
+      </a>
     </header>
-    <section class="contenido-principal">
+    <section class="contenido-principal" id="contenido-principal">
       <div class="contenedor-gral">
         <header class="header-contenido-principal">
           <h2 class="titulo-contenido-principal">
@@ -155,17 +163,30 @@
     <footer class="footer-secundario">
       <div class="contenedor-gral">
         <div class="copy oculto">
-          <p class="texto-copy">copyright</p>
-          <p class="texto-copy">Lorem ipsum dolor sit.</p>
+          <p class="texto-copy texto-1">copyright</p>
+          <p class="texto-copy texto-2">
+            &copy; hecho por <span class="fuerte">pointer</span>
+          </p>
         </div>
         <div class="redes">
-          <div class="fa"><i class="fab fa-instagram"></i></div>
-          <div class="fa"><i class="fab fa-facebook-f"></i></div>
-          <div class="fa"><i class="fab fa-twitter"></i></div>
-          <div class="fa"><i class="fas fa-camera"></i></div>
+          <div class="fa">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="fa">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+          <div class="fa">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+          <div class="fa">
+            <a href="#"><i class="fas fa-camera"></i></a>
+          </div>
         </div>
       </div>
     </footer>
+    <a href="#inicio" class="flotante-up">
+      <i class="fas fa-chevron-up"></i>
+    </a>
     <script
       src="https://kit.fontawesome.com/104a2e09d4.js"
       crossorigin="anonymous"

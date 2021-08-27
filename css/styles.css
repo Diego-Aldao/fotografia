@@ -4,7 +4,6 @@
   src: url("../fonts/Cardo-Regular.ttf");
   src: url("../fonts/Cardo-Bold.ttf");
   font-display: fallback;
-  font-weight: 400;
 }
 
 * {
@@ -20,6 +19,7 @@ body {
   overflow-x: hidden;
   font-family: "Cardo";
   background: black;
+  font-weight: bold;
 }
 
 p,
@@ -64,6 +64,16 @@ img {
   width: 100%;
   margin: 0 auto;
   max-width: 1024px;
+}
+
+.texto-1,
+.texto-2 {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.copy:hover .texto-1 {
+  margin-top: -20px;
 }
 
 .media img {
@@ -614,6 +624,62 @@ img {
   font-size: 0.8rem;
 }
 
+.headers-secundarios .flecha-down-flotante {
+  position: relative;
+  bottom: 100px;
+  margin: 0 auto;
+  width: 50px;
+  height: 55px;
+  display: block;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: clamp(0.7rem, 1.2vw, 1rem);
+  color: white;
+  text-transform: capitalize;
+}
+
+.headers-secundarios .flecha-down-flotante i {
+  position: relative;
+  -webkit-animation: bounce3 1s infinite;
+          animation: bounce3 1s infinite;
+}
+
+@-webkit-keyframes bounce3 {
+  0% {
+    top: 5px;
+  }
+  50% {
+    top: 0px;
+  }
+  100% {
+    top: 5px;
+  }
+}
+
+@keyframes bounce3 {
+  0% {
+    top: 5px;
+  }
+  50% {
+    top: 0px;
+  }
+  100% {
+    top: 5px;
+  }
+}
+
 .headers-secundarios:after {
   content: "";
   width: 100%;
@@ -749,6 +815,15 @@ img {
   overflow: visible;
   max-width: 900px;
   padding-bottom: 50px;
+}
+
+.swiper-pagination-bullet {
+  background: white;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
 }
 
 @media (min-width: 1024px) {
@@ -914,7 +989,6 @@ img {
         -ms-flex-pack: start;
             justify-content: flex-start;
     height: 20px;
-    width: 80px;
     overflow: hidden;
   }
   .footer-secundario .texto-copy {
@@ -923,6 +997,75 @@ img {
     font-weight: bold;
     height: 20px;
     width: 100%;
+  }
+  .footer-secundario .fuerte {
+    text-decoration: underline;
+    font-style: italic;
+  }
+}
+
+.flotante-up {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background: black;
+  color: white;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flotante-up i {
+  position: relative;
+  font-size: 0.7rem;
+  -webkit-animation: bounce4 1s infinite;
+          animation: bounce4 1s infinite;
+}
+
+@-webkit-keyframes bounce4 {
+  0% {
+    bottom: 5px;
+  }
+  50% {
+    bottom: -5px;
+  }
+  100% {
+    bottom: 5px;
+  }
+}
+
+@keyframes bounce4 {
+  0% {
+    bottom: 5px;
+  }
+  50% {
+    bottom: -5px;
+  }
+  100% {
+    bottom: 5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .flotante-up {
+    width: 50px;
+    height: 50px;
+  }
+  .flotante-up i {
+    font-size: 1.1rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
