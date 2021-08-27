@@ -722,4 +722,37 @@ img {
   font-size: 1.5rem;
   border-bottom: 1px solid white;
 }
+
+.swiper-pag-sec {
+  width: 100%;
+  height: 65vw;
+  max-height: 700px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.swiper-pag-sec .swiper {
+  width: 85%;
+  height: 85%;
+  overflow: visible;
+  max-width: 900px;
+  background: aqua;
+  padding-bottom: 50px;
+}
+
+.swiper-pag-sec .swiper-slide {
+  border: 1px solid white;
+}
 /*# sourceMappingURL=styles.css.map */
