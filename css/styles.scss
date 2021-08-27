@@ -30,8 +30,9 @@ $color-negro: #000;
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: $fuente-principal;
+  background: black;
 }
 
 p,
@@ -59,6 +60,16 @@ img {
   object-fit: fill;
   height: 100%;
   width: 100%;
+}
+.textos-comunes {
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+.contenedor-gral {
+  padding: 100px 20px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
 }
 
 //INICIO CONTENIDO PRINCIPAL
@@ -169,7 +180,6 @@ img {
   left: 0px;
   width: 100%;
   height: 100vh;
-  background: black;
   z-index: 9099;
 }
 .animacion-dos {
@@ -253,7 +263,7 @@ img {
     .linea-menu {
       width: 90%;
       height: 2px;
-      background: black;
+
       margin: 3px 0px;
       position: absolute;
       transform: rotate(45deg);
@@ -341,7 +351,7 @@ img {
   }
   .link-nav {
     text-transform: capitalize;
-    font-size: 14px;
+    font-size: 0.9rem;
   }
 }
 @media (min-width: 1440px) {
@@ -373,7 +383,7 @@ img {
 .headers-secundarios {
   background: url("../images/full-1.jpg") center / cover;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   position: relative;
   .navegacion-paginas-secundarias {
     width: 100%;
@@ -399,9 +409,17 @@ img {
   .contenido-header-secundario {
     width: 100%;
     height: calc(100% - 60px);
-    @include flexbox(row, center, center);
+    @include flexbox(column, center, center);
     position: relative;
     z-index: 2;
+    padding-bottom: 80px;
+  }
+  .titulo {
+    font-size: clamp(2.8rem, 6vw, 4.7rem);
+  }
+  .año-secundario {
+    color: white;
+    font-size: 0.8rem;
   }
 }
 .headers-secundarios:after {
@@ -413,6 +431,8 @@ img {
   left: 0;
   background: rgba(0, 0, 0, 0.11);
 }
+
+//QUERYS HEADERS SECUNDARIOS
 @media (min-width: 768px) {
   .headers-secundarios {
     .navegacion-paginas-secundarias {
@@ -425,6 +445,9 @@ img {
 }
 @media (min-width: 1024px) {
   .headers-secundarios {
+    .navegacion-paginas-secundarias {
+      padding: 40px 100px 0px;
+    }
     .menu-movil-pag-sec {
       display: none;
     }
@@ -443,9 +466,20 @@ img {
     .link-menu-desktop {
       color: white;
       text-transform: capitalize;
+      font-size: 0.9rem;
     }
     .contenido-header-secundario {
       height: calc(100% - 90px);
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .headers-secundarios {
+    .navegacion-paginas-secundarias {
+      padding: 100px 100px 0px;
+    }
+    .contenido-header-secundario {
+      height: calc(100% - 150px);
     }
   }
 }

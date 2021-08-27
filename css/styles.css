@@ -17,8 +17,9 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: "Cardo";
+  background: black;
 }
 
 p,
@@ -51,6 +52,18 @@ img {
      object-fit: fill;
   height: 100%;
   width: 100%;
+}
+
+.textos-comunes {
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.contenedor-gral {
+  padding: 100px 20px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
 }
 
 .media img {
@@ -220,7 +233,6 @@ img {
   left: 0px;
   width: 100%;
   height: 100vh;
-  background: black;
   z-index: 9099;
 }
 
@@ -365,7 +377,6 @@ img {
 .menu-movil .flotante-menu-movil .linea-menu {
   width: 90%;
   height: 2px;
-  background: black;
   margin: 3px 0px;
   position: absolute;
   -webkit-transform: rotate(45deg);
@@ -491,7 +502,7 @@ img {
   }
   .link-nav {
     text-transform: capitalize;
-    font-size: 14px;
+    font-size: 0.9rem;
   }
 }
 
@@ -520,7 +531,7 @@ img {
 .headers-secundarios {
   background: url("../images/full-1.jpg") center/cover;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -579,10 +590,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -591,6 +602,16 @@ img {
           justify-content: center;
   position: relative;
   z-index: 2;
+  padding-bottom: 80px;
+}
+
+.headers-secundarios .titulo {
+  font-size: clamp(2.8rem, 6vw, 4.7rem);
+}
+
+.headers-secundarios .año-secundario {
+  color: white;
+  font-size: 0.8rem;
 }
 
 .headers-secundarios:after {
@@ -613,6 +634,9 @@ img {
 }
 
 @media (min-width: 1024px) {
+  .headers-secundarios .navegacion-paginas-secundarias {
+    padding: 40px 100px 0px;
+  }
   .headers-secundarios .menu-movil-pag-sec {
     display: none;
   }
@@ -643,9 +667,19 @@ img {
   .headers-secundarios .link-menu-desktop {
     color: white;
     text-transform: capitalize;
+    font-size: 0.9rem;
   }
   .headers-secundarios .contenido-header-secundario {
     height: calc(100% - 90px);
+  }
+}
+
+@media (min-width: 1440px) {
+  .headers-secundarios .navegacion-paginas-secundarias {
+    padding: 100px 100px 0px;
+  }
+  .headers-secundarios .contenido-header-secundario {
+    height: calc(100% - 150px);
   }
 }
 /*# sourceMappingURL=styles.css.map */
