@@ -523,10 +523,20 @@ img {
     height: 85%;
     overflow: visible;
     max-width: 900px;
-    background: aqua;
     padding-bottom: 50px;
   }
   .swiper-slide {
     border: 1px solid white;
+  }
+}
+//INICIO SECCION MEDIA
+@media (min-width: 1024px) {
+  .seccion-media {
+    .contenedor-gral {
+      @include flexbox(row, flex-start, space-between);
+    }
+    .textos-comunes {
+      max-width: 450px;
+    }
   }
 }

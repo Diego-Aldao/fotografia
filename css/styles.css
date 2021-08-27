@@ -748,11 +748,31 @@ img {
   height: 85%;
   overflow: visible;
   max-width: 900px;
-  background: aqua;
   padding-bottom: 50px;
 }
 
 .swiper-pag-sec .swiper-slide {
   border: 1px solid white;
+}
+
+@media (min-width: 1024px) {
+  .seccion-media .contenedor-gral {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .seccion-media .textos-comunes {
+    max-width: 450px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
