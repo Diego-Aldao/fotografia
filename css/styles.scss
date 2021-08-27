@@ -483,3 +483,30 @@ img {
     }
   }
 }
+//INICIO CONTENIDO PRINCIPAL PAG-SEC
+.contenido-principal {
+  .header-contenido-principal {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 550px;
+    margin-bottom: 50px;
+  }
+  .titulo-contenido-principal {
+    font-size: clamp(1.5rem, 2.1vw, 2rem);
+    line-height: 36px;
+  }
+
+  .pie-contenido-principal {
+    @include flexbox(column, center, center);
+    padding: 50px 0px;
+  }
+  .autor-1 {
+    text-transform: capitalize;
+    margin-bottom: 5px;
+  }
+  .autor-2 {
+    font-size: 1.5rem;
+    border-bottom: 1px solid white;
+  }
+}
