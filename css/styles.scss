@@ -57,7 +57,7 @@ ul {
   display: none;
 }
 img {
-  object-fit: fill;
+  object-fit: cover;
   height: 100%;
   width: 100%;
 }
@@ -66,7 +66,7 @@ img {
   margin-bottom: 20px;
 }
 .contenedor-gral {
-  padding: 100px 20px;
+  padding: 100px 20px 20px;
   width: 100%;
   margin: 0 auto;
   max-width: 1024px;
@@ -381,7 +381,7 @@ img {
 //PAGINA AUDI
 
 .headers-secundarios {
-  background: url("../images/full-1.jpg") center / cover;
+  background: url("../images/pag-sec-audi/project-1-header.jpg") center / cover;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -489,7 +489,7 @@ img {
     width: 100%;
     text-align: center;
     margin: 0 auto;
-    max-width: 550px;
+    max-width: 600px;
     margin-bottom: 50px;
   }
   .titulo-contenido-principal {
@@ -525,9 +525,6 @@ img {
     max-width: 900px;
     padding-bottom: 50px;
   }
-  .swiper-slide {
-    border: 1px solid white;
-  }
 }
 //INICIO SECCION MEDIA
 @media (min-width: 1024px) {
@@ -550,9 +547,11 @@ img {
   grid-template-rows: repeat(6, 1fr);
   grid-gap: 15px;
   .grid-img {
-    border: 1px solid white;
     height: 35vw;
-    color: white;
+  }
+  img {
+    width: 100%;
+    height: 100%;
   }
   .grid-img:nth-child(3),
   .grid-img:nth-child(6),
@@ -585,8 +584,44 @@ img {
 
 //INICIO SECCION ILUSTRACION
 
-.ilustracion {
+//INICIO FOOTER PAG-SEC
+
+.footer-secundario {
+  width: 100%;
   .contenedor-gral {
-    padding-top: 0px;
+    @include flexbox(row, center, center);
+  }
+  .redes {
+    @include flexbox(row, center, center);
+    height: 50px;
+  }
+  .fa {
+    @include flexbox(row, center, center);
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px;
+    color: white;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-secundario {
+    .contenedor-gral {
+      justify-content: space-between;
+    }
+    .copy {
+      @include flexbox(column, flex-start, flex-start);
+      height: 20px;
+      width: 80px;
+      overflow: hidden;
+    }
+    .texto-copy {
+      font-size: 13px;
+      text-transform: capitalize;
+      font-weight: bold;
+      height: 20px;
+      width: 100%;
+    }
   }
 }

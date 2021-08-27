@@ -48,8 +48,8 @@ ul {
 }
 
 img {
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
   width: 100%;
 }
@@ -60,7 +60,7 @@ img {
 }
 
 .contenedor-gral {
-  padding: 100px 20px;
+  padding: 100px 20px 20px;
   width: 100%;
   margin: 0 auto;
   max-width: 1024px;
@@ -529,7 +529,7 @@ img {
 }
 
 .headers-secundarios {
-  background: url("../images/full-1.jpg") center/cover;
+  background: url("../images/pag-sec-audi/project-1-header.jpg") center/cover;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -687,7 +687,7 @@ img {
   width: 100%;
   text-align: center;
   margin: 0 auto;
-  max-width: 550px;
+  max-width: 600px;
   margin-bottom: 50px;
 }
 
@@ -751,10 +751,6 @@ img {
   padding-bottom: 50px;
 }
 
-.swiper-pag-sec .swiper-slide {
-  border: 1px solid white;
-}
-
 @media (min-width: 1024px) {
   .seccion-media .contenedor-gral {
     display: -webkit-box;
@@ -789,9 +785,12 @@ img {
 }
 
 .grid .grid-img {
-  border: 1px solid white;
   height: 35vw;
-  color: white;
+}
+
+.grid img {
+  width: 100%;
+  height: 100%;
 }
 
 .grid .grid-img:nth-child(3),
@@ -836,7 +835,94 @@ img {
   }
 }
 
-.ilustracion .contenedor-gral {
-  padding-top: 0px;
+.footer-secundario {
+  width: 100%;
+}
+
+.footer-secundario .contenedor-gral {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-secundario .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+}
+
+.footer-secundario .fa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin: 0px 5px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 1024px) {
+  .footer-secundario .contenedor-gral {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-secundario .copy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 20px;
+    width: 80px;
+    overflow: hidden;
+  }
+  .footer-secundario .texto-copy {
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: bold;
+    height: 20px;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
