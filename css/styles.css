@@ -656,6 +656,18 @@ img {
           animation: bounce3 1s infinite;
 }
 
+.header-alpes {
+  background: url("../images/pag-sec-alpes/project-3-1.jpg") center/cover;
+}
+
+.header-zero {
+  background: url("../images/pag-sec-zero/project-4-1.jpg") center/cover;
+}
+
+.header-dubai {
+  background: url("../images/pag-sec-dubai/project-2-1.jpg") center/cover;
+}
+
 @-webkit-keyframes bounce3 {
   0% {
     top: 5px;
@@ -908,6 +920,11 @@ img {
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
   }
+}
+
+.ilustracion .img-final {
+  height: 55vw;
+  max-height: 485px;
 }
 
 .footer-secundario {

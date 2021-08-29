@@ -448,6 +448,15 @@ img {
     }
   }
 }
+.header-alpes {
+  background: url("../images/pag-sec-alpes/project-3-1.jpg") center / cover;
+}
+.header-zero {
+  background: url("../images/pag-sec-zero/project-4-1.jpg") center / cover;
+}
+.header-dubai {
+  background: url("../images/pag-sec-dubai/project-2-1.jpg") center / cover;
+}
 @keyframes bounce3 {
   0% {
     top: 5px;
@@ -627,6 +636,12 @@ img {
 }
 
 //INICIO SECCION ILUSTRACION
+.ilustracion {
+  .img-final {
+    height: 55vw;
+    max-height: 485px;
+  }
+}
 
 //INICIO FOOTER PAG-SEC
 
