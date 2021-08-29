@@ -763,7 +763,6 @@ img {
     text-align: center;
     line-height: 1.5;
     margin: 0;
-    max-width: 1000px;
   }
   .link-menu-desktop {
     color: black;
@@ -772,6 +771,27 @@ img {
 }
 .header-nosotros:after {
   display: none;
+}
+.divisor {
+  background: white;
+  .contenedor-gral {
+    @include flexbox(column, center, center);
+  }
+  .textos-comunes {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    max-width: 400px;
+  }
+  .subtitulo {
+    font-weight: bold;
+    color: black;
+    text-transform: capitalize;
+    max-width: 400px;
+    margin-bottom: 10px;
+  }
 }
 
 //QUERYS NOSOTROS

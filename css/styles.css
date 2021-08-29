@@ -1125,7 +1125,6 @@ img {
   text-align: center;
   line-height: 1.5;
   margin: 0;
-  max-width: 1000px;
 }
 
 .header-nosotros .link-menu-desktop {
@@ -1135,6 +1134,43 @@ img {
 
 .header-nosotros:after {
   display: none;
+}
+
+.divisor {
+  background: white;
+}
+
+.divisor .contenedor-gral {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.divisor .textos-comunes {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  max-width: 400px;
+}
+
+.divisor .subtitulo {
+  font-weight: bold;
+  color: black;
+  text-transform: capitalize;
+  max-width: 400px;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 1024px) {
