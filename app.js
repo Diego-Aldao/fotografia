@@ -12,27 +12,6 @@ const cerrarMenu = () => {
 btnMenu.addEventListener("click", abrirMenu);
 btnCerrar.addEventListener("click", cerrarMenu);
 
-//SWIPER
-var swiper = new Swiper(".header-principal", {
-  speed: 1500,
-  parallax: true,
-  loop: true,
-  mousewheel: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-var swiper = new Swiper(".swiper", {
-  centeredSlides: true,
-  spaceBetween: 100,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-
 //API INTESERCTION OBSERVER
 const crearObservador = (animacion, nuevaClase) => {
   const secciones = document.querySelectorAll(animacion);
@@ -60,3 +39,24 @@ crearObservador(".animacion-uno", "final-uno");
 crearObservador(".animacion-dos", "final-dos");
 crearObservador(".animacion-tres", "final-tres");
 crearObservador(".animacion-cuatro", "final-cuatro");
+
+//SWIPER
+var swiper = new Swiper(".header-principal", {
+  speed: 1500,
+  parallax: true,
+  loop: true,
+  mousewheel: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+var swiper = new Swiper(".swiper", {
+  centeredSlides: true,
+  spaceBetween: 100,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
