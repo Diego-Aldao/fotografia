@@ -1552,4 +1552,16 @@ img {
         grid-template-rows: 1fr 1fr;
   }
 }
+
+.footer-nosotros {
+  background: white;
+}
+
+.footer-nosotros .texto-copy {
+  color: black;
+}
+
+.footer-nosotros .fa {
+  color: black;
+}
 /*# sourceMappingURL=styles.css.map */
