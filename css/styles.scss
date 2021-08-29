@@ -2,10 +2,15 @@
 @font-face {
   font-family: Cardo;
   src: url("../fonts/Cardo-Bold.ttf");
+  font-display: fallback;
+}
+@font-face {
+  font-family: Cardo-Light;
   src: url("../fonts/Cardo-Regular.ttf");
   font-display: fallback;
 }
 $fuente-principal: "Cardo";
+$fuente-light: "Cardo-Light";
 
 //COLORES
 $color-blanco: #fff;
@@ -31,7 +36,6 @@ $color-negro: #000;
 body {
   overflow-x: hidden;
   font-family: $fuente-principal;
-  background: black;
   font-weight: normal;
 }
 
@@ -272,7 +276,7 @@ img {
     .linea-menu {
       width: 90%;
       height: 2px;
-
+      background: black;
       margin: 3px 0px;
       position: absolute;
       transform: rotate(45deg);
@@ -531,6 +535,7 @@ img {
 }
 //INICIO CONTENIDO PRINCIPAL PAG-SEC
 .contenido-principal {
+  background: black;
   .header-contenido-principal {
     width: 100%;
     text-align: center;
@@ -559,6 +564,7 @@ img {
 
 //INICIO SECCION SWIPER PAG-SEC
 .swiper-pag-sec {
+  background: black;
   width: 100%;
   height: 65vw;
   max-height: 700px;
@@ -580,6 +586,9 @@ img {
   opacity: 1;
 }
 //INICIO SECCION MEDIA
+.seccion-media {
+  background: black;
+}
 @media (min-width: 1024px) {
   .seccion-media {
     .contenedor-gral {
@@ -593,6 +602,7 @@ img {
 
 //INICIO SECCION GRID
 .grid {
+  background: black;
   padding: 100px 10px 0px;
   width: 100%;
   display: grid;
@@ -635,8 +645,14 @@ img {
   }
 }
 
+//INICIO SECCION MEDIA DOS
+.seccion-media-dos {
+  background: black;
+}
+
 //INICIO SECCION ILUSTRACION
 .ilustracion {
+  background: black;
   .img-final {
     height: 55vw;
     max-height: 485px;
@@ -646,6 +662,7 @@ img {
 //INICIO FOOTER PAG-SEC
 
 .footer-secundario {
+  background: black;
   width: 100%;
   .contenedor-gral {
     @include flexbox(row, center, center);
@@ -731,11 +748,10 @@ img {
 //INICIO NOSOTROS
 
 .header-nosotros {
-  background: white;
   width: 100%;
   height: auto;
   position: relative;
-  color: black;
+  background: white;
   .menu-movil-pag-sec {
     .linea-menu {
       background: black;
@@ -749,10 +765,10 @@ img {
     color: black;
     font-weight: lighter;
     font-size: clamp(2.8rem, 7vw, 6.5rem);
+    font-family: $fuente-light;
   }
   .subtitulo {
     text-transform: capitalize;
-    font-weight: bold;
     color: black;
     margin-bottom: 50px;
     font-size: clamp(1rem, 1vw, 1.1rem);
@@ -763,30 +779,27 @@ img {
     text-align: center;
     line-height: 1.5;
     margin: 0;
+    font-family: $fuente-light;
   }
   .link-menu-desktop {
     color: black;
-    font-weight: bold;
   }
 }
 .header-nosotros:after {
   display: none;
 }
 .divisor {
-  background: white;
   .contenedor-gral {
     @include flexbox(column, center, center);
   }
   .textos-comunes {
     color: black;
     text-align: center;
-    font-weight: bold;
     font-size: 1.5rem;
     line-height: 1.4;
     max-width: 400px;
   }
   .subtitulo {
-    font-weight: bold;
     color: black;
     text-transform: capitalize;
     max-width: 400px;
@@ -802,6 +815,106 @@ img {
     }
     .subtitulo {
       margin: 20px 0px 140px;
+    }
+  }
+}
+
+//INICIO SECCION SERVICIOS-CLIENTES
+
+.header-servicios-clientes {
+  .textos-comunes {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: black;
+    font-weight: bold;
+  }
+}
+.servicios,
+.clientes {
+  margin-bottom: 50px;
+}
+.lista-servicios-clientes {
+  list-style: inside;
+  .link-servicios-clientes {
+    padding: 5px 0px;
+    text-transform: capitalize;
+  }
+}
+.habilidades {
+  width: 100%;
+  .textos-comunes {
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    color: black;
+  }
+  .textos-comunes:nth-child(1) {
+    margin-bottom: 20px;
+  }
+}
+.progreso {
+  width: 100%;
+  height: 6px;
+  background: #e1e4e8;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  .barra-progreso {
+    display: block;
+    height: 100%;
+    width: 97%;
+    background: linear-gradient(
+      90deg,
+      #ffd33d,
+      #ea4aaa 17%,
+      #b34bff 34%,
+      #01feff 51%,
+      #ffd33d 68%,
+      #ea4aaa 85%,
+      #b34bff
+    );
+    background-size: 300% 100%;
+    animation: progress-animation 2s linear infinite;
+  }
+  .barra-02 {
+    width: 82%;
+  }
+  .barra-03 {
+    width: 57%;
+  }
+  .barra-04 {
+    width: 68%;
+  }
+}
+
+@keyframes progress-animation {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+//QURYS SERVICIOS-CLIENTES
+@media (min-width: 768px) {
+  .servicios-clientes {
+    .contenedor-gral {
+      @include flexbox(row, flex-start, flex-start);
+      flex-wrap: wrap;
+    }
+    .servicios {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .servicios-clientes {
+    .servicios,
+    .clientes,
+    .habilidades {
+      flex: 1;
+      margin: 0px;
     }
   }
 }

@@ -2,6 +2,11 @@
 @font-face {
   font-family: Cardo;
   src: url("../fonts/Cardo-Bold.ttf");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: Cardo-Light;
   src: url("../fonts/Cardo-Regular.ttf");
   font-display: fallback;
 }
@@ -18,7 +23,6 @@
 body {
   overflow-x: hidden;
   font-family: "Cardo";
-  background: black;
   font-weight: normal;
 }
 
@@ -387,6 +391,7 @@ img {
 .menu-movil .flotante-menu-movil .linea-menu {
   width: 90%;
   height: 2px;
+  background: black;
   margin: 3px 0px;
   position: absolute;
   -webkit-transform: rotate(45deg);
@@ -761,6 +766,10 @@ img {
   }
 }
 
+.contenido-principal {
+  background: black;
+}
+
 .contenido-principal .header-contenido-principal {
   width: 100%;
   text-align: center;
@@ -802,6 +811,7 @@ img {
 }
 
 .swiper-pag-sec {
+  background: black;
   width: 100%;
   height: 65vw;
   max-height: 700px;
@@ -838,6 +848,10 @@ img {
   opacity: 1;
 }
 
+.seccion-media {
+  background: black;
+}
+
 @media (min-width: 1024px) {
   .seccion-media .contenedor-gral {
     display: -webkit-box;
@@ -860,6 +874,7 @@ img {
 }
 
 .grid {
+  background: black;
   padding: 100px 10px 0px;
   width: 100%;
   display: -ms-grid;
@@ -922,12 +937,21 @@ img {
   }
 }
 
+.seccion-media-dos {
+  background: black;
+}
+
+.ilustracion {
+  background: black;
+}
+
 .ilustracion .img-final {
   height: 55vw;
   max-height: 485px;
 }
 
 .footer-secundario {
+  background: black;
   width: 100%;
 }
 
@@ -1087,11 +1111,10 @@ img {
 }
 
 .header-nosotros {
-  background: white;
   width: 100%;
   height: auto;
   position: relative;
-  color: black;
+  background: white;
 }
 
 .header-nosotros .menu-movil-pag-sec .linea-menu {
@@ -1109,11 +1132,11 @@ img {
   color: black;
   font-weight: lighter;
   font-size: clamp(2.8rem, 7vw, 6.5rem);
+  font-family: "Cardo-Light";
 }
 
 .header-nosotros .subtitulo {
   text-transform: capitalize;
-  font-weight: bold;
   color: black;
   margin-bottom: 50px;
   font-size: clamp(1rem, 1vw, 1.1rem);
@@ -1125,19 +1148,15 @@ img {
   text-align: center;
   line-height: 1.5;
   margin: 0;
+  font-family: "Cardo-Light";
 }
 
 .header-nosotros .link-menu-desktop {
   color: black;
-  font-weight: bold;
 }
 
 .header-nosotros:after {
   display: none;
-}
-
-.divisor {
-  background: white;
 }
 
 .divisor .contenedor-gral {
@@ -1159,14 +1178,12 @@ img {
 .divisor .textos-comunes {
   color: black;
   text-align: center;
-  font-weight: bold;
   font-size: 1.5rem;
   line-height: 1.4;
   max-width: 400px;
 }
 
 .divisor .subtitulo {
-  font-weight: bold;
   color: black;
   text-transform: capitalize;
   max-width: 400px;
@@ -1179,6 +1196,125 @@ img {
   }
   .header-nosotros .subtitulo {
     margin: 20px 0px 140px;
+  }
+}
+
+.header-servicios-clientes .textos-comunes {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: black;
+  font-weight: bold;
+}
+
+.servicios,
+.clientes {
+  margin-bottom: 50px;
+}
+
+.lista-servicios-clientes {
+  list-style: inside;
+}
+
+.lista-servicios-clientes .link-servicios-clientes {
+  padding: 5px 0px;
+  text-transform: capitalize;
+}
+
+.habilidades {
+  width: 100%;
+}
+
+.habilidades .textos-comunes {
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  color: black;
+}
+
+.habilidades .textos-comunes:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.progreso {
+  width: 100%;
+  height: 6px;
+  background: #e1e4e8;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progreso .barra-progreso {
+  display: block;
+  height: 100%;
+  width: 97%;
+  background: -webkit-gradient(linear, left top, right top, from(#ffd33d), color-stop(17%, #ea4aaa), color-stop(34%, #b34bff), color-stop(51%, #01feff), color-stop(68%, #ffd33d), color-stop(85%, #ea4aaa), to(#b34bff));
+  background: linear-gradient(90deg, #ffd33d, #ea4aaa 17%, #b34bff 34%, #01feff 51%, #ffd33d 68%, #ea4aaa 85%, #b34bff);
+  background-size: 300% 100%;
+  -webkit-animation: progress-animation 2s linear infinite;
+          animation: progress-animation 2s linear infinite;
+}
+
+.progreso .barra-02 {
+  width: 82%;
+}
+
+.progreso .barra-03 {
+  width: 57%;
+}
+
+.progreso .barra-04 {
+  width: 68%;
+}
+
+@-webkit-keyframes progress-animation {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+@keyframes progress-animation {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .servicios-clientes .contenedor-gral {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .servicios-clientes .servicios {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .servicios-clientes .servicios,
+  .servicios-clientes .clientes,
+  .servicios-clientes .habilidades {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 0px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
