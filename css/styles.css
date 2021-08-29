@@ -1285,7 +1285,7 @@ img {
 }
 
 @media (min-width: 768px) {
-  .servicios-clientes .contenedor-gral {
+  .servicios-clientes-habilidades .contenedor-gral {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1302,19 +1302,213 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .servicios-clientes .servicios {
+  .servicios-clientes-habilidades .servicios {
     width: 50%;
   }
 }
 
 @media (min-width: 1024px) {
-  .servicios-clientes .servicios,
-  .servicios-clientes .clientes,
-  .servicios-clientes .habilidades {
+  .servicios-clientes-habilidades .servicios,
+  .servicios-clientes-habilidades .clientes,
+  .servicios-clientes-habilidades .habilidades {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     margin: 0px;
+  }
+}
+
+.equipo {
+  background: black;
+}
+
+.equipo .contenedor-equipo {
+  max-width: 100%;
+}
+
+.equipo .textos-comunes {
+  color: white;
+}
+
+.equipo .subtitulo {
+  color: white;
+}
+
+.equipo .cartas-equipo {
+  width: 100%;
+  height: 155vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 400px;
+  max-height: 680px;
+  margin: 0 auto 50px;
+  position: relative;
+}
+
+.equipo .cartas-equipo .img-equipo {
+  background: red;
+  width: 100%;
+  height: 70%;
+}
+
+.equipo .cartas-equipo .textos-comunes {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  z-index: 2;
+}
+
+.equipo .cartas-equipo .titulo-equipo {
+  font-size: 1.5rem;
+  padding-top: 20px;
+  margin: 0px;
+}
+
+.equipo .cartas-equipo .redes-equipo {
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+}
+
+.equipo .cartas-equipo i {
+  width: 30px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.equipo .pie-seccion {
+  max-width: 750px;
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  font-family: "Cardo-Light";
+}
+
+@media (min-width: 768px) {
+  .equipo .contenedor-equipo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .equipo .cartas-equipo {
+    height: 75vw;
+    width: 45%;
+    max-height: 800px;
+    margin: 0 0 20px;
+    max-width: 550px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .equipo .cartas-equipo {
+    background: url("../images/pag-sec-nosotros/page-about3.jpg") center/cover;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+    max-height: 650px;
+  }
+  .equipo .cartas-equipo .img-equipo {
+    display: none;
+  }
+  .equipo .cartas-equipo .texto-cartas {
+    width: 100%;
+    height: calc(100% - 60px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .equipo .cartas-equipo .titulo-equipo {
+    padding: 0px;
+  }
+  .equipo .cartas-equipo .textos-comunes {
+    margin: 0px;
+  }
+  .equipo .cartas-equipo .redes-equipo {
+    margin-bottom: 30px;
+  }
+  .equipo .cartas-equipo:nth-child(2) {
+    background: url("../images/pag-sec-nosotros/page-about4.jpg") center/cover;
+  }
+  .equipo .cartas-equipo:nth-child(3) {
+    background: url("../images/pag-sec-nosotros/page-about5.jpg") center/cover;
+  }
+  .equipo .cartas-equipo:nth-child(4) {
+    background: url("../images/pag-sec-nosotros/page-about6.jpg") center/cover;
+  }
+  .equipo .cartas-equipo::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.664);
+    z-index: 0;
+  }
+}
+
+@media (min-width: 1680px) {
+  .equipo .cartas-equipo {
+    width: 22%;
+    height: 30vw;
   }
 }
 /*# sourceMappingURL=styles.css.map */

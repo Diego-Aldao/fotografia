@@ -897,7 +897,7 @@ img {
 
 //QURYS SERVICIOS-CLIENTES
 @media (min-width: 768px) {
-  .servicios-clientes {
+  .servicios-clientes-habilidades {
     .contenedor-gral {
       @include flexbox(row, flex-start, flex-start);
       flex-wrap: wrap;
@@ -909,12 +909,143 @@ img {
 }
 
 @media (min-width: 1024px) {
-  .servicios-clientes {
+  .servicios-clientes-habilidades {
     .servicios,
     .clientes,
     .habilidades {
       flex: 1;
       margin: 0px;
+    }
+  }
+}
+
+//INICIO SECCION EQUIPO
+.equipo {
+  background: black;
+  .contenedor-equipo {
+    max-width: 100%;
+  }
+  .textos-comunes {
+    color: white;
+  }
+  .subtitulo {
+    color: white;
+  }
+  .cartas-equipo {
+    width: 100%;
+    height: 155vw;
+    @include flexbox(column, center, flex-start);
+    max-width: 400px;
+    max-height: 680px;
+    margin: 0 auto 50px;
+    position: relative;
+    .img-equipo {
+      background: red;
+      width: 100%;
+      height: 70%;
+    }
+    .textos-comunes {
+      text-transform: capitalize;
+      font-size: 0.9rem;
+      z-index: 2;
+    }
+    .titulo-equipo {
+      font-size: 1.5rem;
+      padding-top: 20px;
+      margin: 0px;
+    }
+    .redes-equipo {
+      width: 100%;
+      height: 30px;
+      @include flexbox(row, center, center);
+      z-index: 2;
+    }
+    i {
+      width: 30px;
+      height: 100%;
+      @include flexbox(row, center, center);
+      font-size: 0.8rem;
+      color: white;
+    }
+  }
+  .pie-seccion {
+    max-width: 750px;
+    font-size: clamp(1.5rem, 2.2vw, 2rem);
+    font-family: $fuente-light;
+  }
+}
+
+//QUERYS EQUIPO
+@media (min-width: 768px) {
+  .equipo {
+    .contenedor-equipo {
+      @include flexbox(row, flex-start, space-evenly);
+      flex-wrap: wrap;
+    }
+    .cartas-equipo {
+      height: 75vw;
+      width: 45%;
+      max-height: 800px;
+      margin: 0 0 20px;
+      max-width: 550px;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .equipo {
+    .cartas-equipo {
+      background: url("../images/pag-sec-nosotros/page-about3.jpg") center /
+        cover;
+      justify-content: center;
+      margin-bottom: 50px;
+      max-height: 650px;
+      .img-equipo {
+        display: none;
+      }
+      .texto-cartas {
+        width: 100%;
+        height: calc(100% - 60px);
+        @include flexbox(column, center, center);
+      }
+      .titulo-equipo {
+        padding: 0px;
+      }
+      .textos-comunes {
+        margin: 0px;
+      }
+      .redes-equipo {
+        margin-bottom: 30px;
+      }
+    }
+    .cartas-equipo:nth-child(2) {
+      background: url("../images/pag-sec-nosotros/page-about4.jpg") center /
+        cover;
+    }
+    .cartas-equipo:nth-child(3) {
+      background: url("../images/pag-sec-nosotros/page-about5.jpg") center /
+        cover;
+    }
+    .cartas-equipo:nth-child(4) {
+      background: url("../images/pag-sec-nosotros/page-about6.jpg") center /
+        cover;
+    }
+    .cartas-equipo::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      background: rgba(0, 0, 0, 0.664);
+      z-index: 0;
+    }
+  }
+}
+@media (min-width: 1680px) {
+  .equipo {
+    .cartas-equipo {
+      width: 22%;
+      height: 30vw;
     }
   }
 }
