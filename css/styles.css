@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @font-face {
   font-family: Cardo;
-  src: url("../fonts/Cardo-Regular.ttf");
   src: url("../fonts/Cardo-Bold.ttf");
+  src: url("../fonts/Cardo-Regular.ttf");
   font-display: fallback;
 }
 
@@ -19,7 +19,7 @@ body {
   overflow-x: hidden;
   font-family: "Cardo";
   background: black;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 p,
@@ -713,7 +713,7 @@ img {
 
 @media (min-width: 1024px) {
   .headers-secundarios .navegacion-paginas-secundarias {
-    padding: 40px 100px 0px;
+    padding: 60px 100px 0px;
   }
   .headers-secundarios .menu-movil-pag-sec {
     display: none;
@@ -1083,6 +1083,66 @@ img {
   }
   .flotante-up i {
     font-size: 1.1rem;
+  }
+}
+
+.header-nosotros {
+  background: white;
+  width: 100%;
+  height: auto;
+  position: relative;
+  color: black;
+}
+
+.header-nosotros .menu-movil-pag-sec .linea-menu {
+  background: black;
+}
+
+.header-nosotros .contenido-header-secundario {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 80px 20px;
+}
+
+.header-nosotros .titulo {
+  color: black;
+  font-weight: lighter;
+  font-size: clamp(2.8rem, 7vw, 6.5rem);
+}
+
+.header-nosotros .subtitulo {
+  text-transform: capitalize;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 50px;
+  font-size: clamp(1rem, 1vw, 1.1rem);
+}
+
+.header-nosotros .texto-header {
+  color: black;
+  font-size: clamp(1.5rem, 2.1vw, 1.8rem);
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 1000px;
+}
+
+.header-nosotros .link-menu-desktop {
+  color: black;
+  font-weight: bold;
+}
+
+.header-nosotros:after {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .header-nosotros .contenido-header-secundario {
+    padding-top: 140px;
+  }
+  .header-nosotros .subtitulo {
+    margin: 20px 0px 140px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

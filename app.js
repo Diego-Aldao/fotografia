@@ -1,3 +1,17 @@
+//NAVEGACION MOVIL
+const btnMenu = document.querySelector(".flotante-menu");
+const btnCerrar = document.querySelector(".flotante-menu-movil");
+const navMovil = document.querySelector(".menu-movil");
+
+const abrirMenu = () => {
+  navMovil.style.display = "block";
+};
+const cerrarMenu = () => {
+  navMovil.style.display = "none";
+};
+
+btnMenu.addEventListener("click", abrirMenu);
+btnCerrar.addEventListener("click", cerrarMenu);
 var swiper = new Swiper(".header-principal", {
   speed: 1500,
   parallax: true,
@@ -49,18 +63,3 @@ crearObservador(".animacion-uno", "final-uno");
 crearObservador(".animacion-dos", "final-dos");
 crearObservador(".animacion-tres", "final-tres");
 crearObservador(".animacion-cuatro", "final-cuatro");
-
-//NAVEGACION MOVIL
-const btnMenu = document.querySelector(".flotante-menu");
-const btnCerrar = document.querySelector(".flotante-menu-movil");
-const navMovil = document.querySelector(".menu-movil");
-
-const abrirMenu = () => {
-  navMovil.style.display = "block";
-};
-const cerrarMenu = () => {
-  navMovil.style.display = "none";
-};
-
-btnMenu.addEventListener("click", abrirMenu);
-btnCerrar.addEventListener("click", cerrarMenu);
