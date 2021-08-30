@@ -1123,3 +1123,36 @@ img {
     text-align: center;
   }
 }
+
+//INICIO CONTENIDO CONTACTO
+.carta-contacto {
+  width: 100%;
+  @include flexbox(column, center, center);
+  margin-bottom: 20px;
+  padding: 20px 0px;
+  i {
+    font-size: 2rem;
+  }
+  .textos-comunes {
+    margin: 10px 0px 0px;
+    color: black;
+    border-bottom: 1px solid black;
+  }
+  .direccion {
+    text-transform: capitalize;
+    border: none;
+  }
+}
+
+//QUERYS CONTENIDO CONTACTO
+@media (min-width: 768px) {
+  .contenido-contacto {
+    .contenedor-gral {
+      @include flexbox(row, flex-start, flex-start);
+    }
+    .carta-contacto {
+      flex: 1;
+      margin: 0px;
+    }
+  }
+}
