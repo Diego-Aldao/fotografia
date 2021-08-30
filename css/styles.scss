@@ -1156,3 +1156,52 @@ img {
     }
   }
 }
+
+//INICIO FORMULARIO CONTACTO
+.form-contacto {
+  @include flexbox(column, center, center);
+  .inputs {
+    width: 100%;
+    padding: 15px 0px;
+    border: none;
+    border-bottom: 1px solid rgb(145, 145, 145);
+    margin-bottom: 25px;
+    resize: none;
+    font-family: $fuente-principal;
+    outline: none;
+  }
+  .inputs::placeholder {
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+  }
+  .btn-form {
+    min-height: 50px;
+    padding: 10px 40px;
+    font-family: $fuente-principal;
+    background: none;
+    border: 1px solid rgb(145, 145, 145);
+    border-radius: 3px;
+    text-transform: capitalize;
+    margin-top: 70px;
+    font-size: 0.9rem;
+  }
+}
+
+//QURYS FORMULARIO
+@media (min-width: 768px) {
+  .form-contacto {
+    @include flexbox(row, center, space-between);
+    flex-wrap: wrap;
+    .inputs {
+      width: 30%;
+    }
+    .txt-area {
+      width: 100%;
+    }
+    .btn-form {
+      margin: 70px auto 0px;
+    }
+  }
+}

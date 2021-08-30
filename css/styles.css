@@ -1646,4 +1646,100 @@ img {
     margin: 0px;
   }
 }
+
+.form-contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-contacto .inputs {
+  width: 100%;
+  padding: 15px 0px;
+  border: none;
+  border-bottom: 1px solid #919191;
+  margin-bottom: 25px;
+  resize: none;
+  font-family: "Cardo";
+  outline: none;
+}
+
+.form-contacto .inputs::-webkit-input-placeholder {
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+.form-contacto .inputs:-ms-input-placeholder {
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+.form-contacto .inputs::-ms-input-placeholder {
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+.form-contacto .inputs::placeholder {
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+.form-contacto .btn-form {
+  min-height: 50px;
+  padding: 10px 40px;
+  font-family: "Cardo";
+  background: none;
+  border: 1px solid #919191;
+  border-radius: 3px;
+  text-transform: capitalize;
+  margin-top: 70px;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .form-contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .form-contacto .inputs {
+    width: 30%;
+  }
+  .form-contacto .txt-area {
+    width: 100%;
+  }
+  .form-contacto .btn-form {
+    margin: 70px auto 0px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
