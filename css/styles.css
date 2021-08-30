@@ -675,6 +675,10 @@ img {
   background: url("../images/pag-sec-dubai/project-2-1.jpg") center/cover;
 }
 
+.header-japon {
+  background: url("../images/pag-sec-japon/japon-header.jpg") center/cover;
+}
+
 @-webkit-keyframes bounce3 {
   0% {
     top: 5px;
