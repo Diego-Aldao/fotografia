@@ -783,7 +783,7 @@ img {
   }
   .texto-header {
     color: black;
-    font-size: clamp(1.5rem, 2.1vw, 1.8rem);
+    font-size: clamp(1.5rem, 2.1vw, 2rem);
     text-align: center;
     line-height: 1.5;
     margin: 0;
@@ -1101,5 +1101,25 @@ img {
   }
   .fa {
     color: black;
+  }
+}
+
+//INICIO PAG-SEC CONTACTO
+.header-contacto {
+  .contenedor-gral {
+    padding-bottom: 20px;
+  }
+  .titulo {
+    font-size: clamp(2.3rem, 5.5vw, 6.5rem);
+    margin-bottom: 5px;
+  }
+  .subtitulo {
+    text-transform: lowercase;
+  }
+  .subtitulo::first-letter {
+    text-transform: uppercase;
+  }
+  .texto-header {
+    text-align: center;
   }
 }

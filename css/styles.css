@@ -1146,7 +1146,7 @@ img {
 
 .header-nosotros .texto-header {
   color: black;
-  font-size: clamp(1.5rem, 2.1vw, 1.8rem);
+  font-size: clamp(1.5rem, 2.1vw, 2rem);
   text-align: center;
   line-height: 1.5;
   margin: 0;
@@ -1566,5 +1566,26 @@ img {
 
 .footer-nosotros .fa {
   color: black;
+}
+
+.header-contacto .contenedor-gral {
+  padding-bottom: 20px;
+}
+
+.header-contacto .titulo {
+  font-size: clamp(2.3rem, 5.5vw, 6.5rem);
+  margin-bottom: 5px;
+}
+
+.header-contacto .subtitulo {
+  text-transform: lowercase;
+}
+
+.header-contacto .subtitulo::first-letter {
+  text-transform: uppercase;
+}
+
+.header-contacto .texto-header {
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
