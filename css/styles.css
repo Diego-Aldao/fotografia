@@ -74,10 +74,16 @@ img {
 .texto-2 {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  color: white;
 }
 
 .copy:hover .texto-1 {
   margin-top: -20px;
+}
+
+.fuerte {
+  text-decoration: underline;
+  font-style: italic;
 }
 
 .media img {
@@ -1044,10 +1050,6 @@ img {
     font-weight: bold;
     height: 20px;
     width: 100%;
-  }
-  .footer-secundario .fuerte {
-    text-decoration: underline;
-    font-style: italic;
   }
 }
 

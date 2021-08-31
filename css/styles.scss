@@ -78,12 +78,17 @@ img {
 .texto-1,
 .texto-2 {
   transition: all 0.2s ease-in-out;
+  color: white;
 }
 
 .copy:hover {
   .texto-1 {
     margin-top: -20px;
   }
+}
+.fuerte {
+  text-decoration: underline;
+  font-style: italic;
 }
 //INICIO CONTENIDO PRINCIPAL
 
@@ -708,10 +713,6 @@ img {
       font-weight: bold;
       height: 20px;
       width: 100%;
-    }
-    .fuerte {
-      text-decoration: underline;
-      font-style: italic;
     }
   }
 }
