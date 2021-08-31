@@ -1753,7 +1753,7 @@ img {
 
 .cartas-blog {
   width: 100%;
-  padding: 100px 50px;
+  padding: 100px 40px;
   background: url("../images/pag-sec-japon/japon-slide-1.jpg") center/cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1774,9 +1774,10 @@ img {
 }
 
 .cartas-blog .titulo {
-  font-size: 1.6rem;
+  font-size: clamp(1.6rem, 3.3vw, 2.6rem);
   margin-bottom: 20px;
   z-index: 1;
+  font-family: "Cardo-Light";
 }
 
 .cartas-blog .datos-carta {
@@ -1802,7 +1803,7 @@ img {
 .cartas-blog .dato-carta {
   padding: 5px 10px;
   text-transform: capitalize;
-  font-size: 0.8rem;
+  font-size: clamp(0.9rem, 1vw, 1rem);
   color: rgba(255, 255, 255, 0.904);
 }
 
@@ -1822,6 +1823,7 @@ img {
   padding: 10px 20px;
   border: 1px solid black;
   margin-bottom: 50px;
+  max-width: 350px;
 }
 
 .contenido-secundario-blog .busqueda-blog::-webkit-input-placeholder {
@@ -1879,5 +1881,74 @@ img {
   height: 20vw;
   max-height: 150px;
   border: 2px solid white;
+}
+
+@media (min-width: 768px) {
+  .contenido-secundario-blog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contenido-secundario-blog .busqueda-blog {
+    margin-right: 400px;
+  }
+  .contenido-secundario-blog .contenedor-aside {
+    width: 33%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cartas-blog {
+    padding: 130px 20px;
+  }
+  .contenedor-blog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 87%;
+    max-width: 1300px;
+  }
+  .contenedor-blog .contenido-principal-blog {
+    width: 65%;
+  }
+  .contenedor-blog .contenido-secundario-blog {
+    width: 28%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedor-blog .contenido-secundario-blog .contenedor-aside {
+    width: 100%;
+  }
+  .contenedor-blog .contenido-secundario-blog .busqueda-blog {
+    margin-right: 0px;
+  }
+  .contenido-secundario-blog img {
+    height: 5vw;
+    max-height: 100px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
