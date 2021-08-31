@@ -1249,3 +1249,43 @@ img {
   background: rgba(0, 0, 0, 0.466);
   z-index: 0;
 }
+.contenido-secundario-blog {
+  .busqueda-blog {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+  }
+  .busqueda-blog::placeholder {
+    color: black;
+    text-transform: capitalize;
+  }
+  .textos-comunes {
+    margin-bottom: 10px;
+    color: black;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+  }
+  .contenido-aside {
+    margin-bottom: 50px;
+  }
+  .lista-filtro {
+    list-style: inside;
+  }
+  .link-filtro {
+    padding: 5px 0px;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+  }
+  .galeria {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  img {
+    height: 20vw;
+    max-height: 150px;
+    border: 2px solid white;
+  }
+}
