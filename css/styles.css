@@ -77,6 +77,19 @@ img {
   color: white;
 }
 
+.current {
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, from(#ffd33d), color-stop(17%, #ea4aaa), color-stop(34%, #b34bff), color-stop(51%, #01feff), color-stop(68%, #ffd33d), color-stop(85%, #ea4aaa), to(#b34bff));
+  background: linear-gradient(90deg, #ffd33d, #ea4aaa 17%, #b34bff 34%, #01feff 51%, #ffd33d 68%, #ea4aaa 85%, #b34bff);
+  bottom: -5px;
+  left: 0px;
+  background-size: 300% 100%;
+  -webkit-animation: progress-animation 2s linear infinite;
+          animation: progress-animation 2s linear infinite;
+}
+
 .copy:hover .texto-1 {
   margin-top: -20px;
 }
@@ -84,6 +97,19 @@ img {
 .fuerte {
   text-decoration: underline;
   font-style: italic;
+}
+
+.btn-form {
+  min-height: 50px;
+  padding: 10px 40px;
+  font-family: "Cardo";
+  background: none;
+  border: 1px solid #919191;
+  border-radius: 3px;
+  text-transform: capitalize;
+  margin-top: 70px;
+  font-size: 0.9rem;
+  cursor: pointer;
 }
 
 .media img {
@@ -771,6 +797,7 @@ img {
     color: white;
     text-transform: capitalize;
     font-size: 0.9rem;
+    position: relative;
   }
   .headers-secundarios .contenido-header-secundario {
     height: calc(100% - 90px);
@@ -1713,18 +1740,6 @@ img {
   color: black;
   font-weight: bold;
   text-transform: capitalize;
-  font-size: 0.9rem;
-}
-
-.form-contacto .btn-form {
-  min-height: 50px;
-  padding: 10px 40px;
-  font-family: "Cardo";
-  background: none;
-  border: 1px solid #919191;
-  border-radius: 3px;
-  text-transform: capitalize;
-  margin-top: 70px;
   font-size: 0.9rem;
 }
 
