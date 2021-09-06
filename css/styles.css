@@ -1463,6 +1463,14 @@ img {
   font-family: "Cardo-Light";
 }
 
+.equipo .pie-seccion::first-letter {
+  text-transform: uppercase;
+}
+
+.equipo .pie-seccion:nth-child(2) {
+  padding-bottom: 50px;
+}
+
 @media (min-width: 768px) {
   .equipo .contenedor-equipo {
     display: -webkit-box;

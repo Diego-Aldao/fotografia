@@ -1028,6 +1028,12 @@ img {
     font-size: clamp(1.5rem, 2.2vw, 2rem);
     font-family: $fuente-light;
   }
+  .pie-seccion::first-letter {
+    text-transform: uppercase;
+  }
+  .pie-seccion:nth-child(2) {
+    padding-bottom: 50px;
+  }
 }
 
 //QUERYS EQUIPO
