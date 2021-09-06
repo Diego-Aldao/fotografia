@@ -1779,7 +1779,7 @@ img {
 .cartas-blog {
   width: 100%;
   padding: 100px 40px;
-  background: url("../images/pag-sec-japon/japon-slide-1.jpg") center/cover;
+  background: url("../images/pag-sec-blog/blog-01.jpg") center/cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1830,6 +1830,22 @@ img {
   text-transform: capitalize;
   font-size: clamp(0.9rem, 1vw, 1rem);
   color: rgba(255, 255, 255, 0.904);
+}
+
+.cartas-blog:nth-child(2) {
+  background: url("../images/pag-sec-blog/blog-02.jpg") center/cover;
+}
+
+.cartas-blog:nth-child(3) {
+  background: url("../images/pag-sec-blog/blog-03.jpg") center/cover;
+}
+
+.cartas-blog:nth-child(4) {
+  background: url("../images/pag-sec-blog/blog-04.jpg") center/cover;
+}
+
+.cartas-blog:nth-child(5) {
+  background: url("../images/pag-sec-blog/blog-05.jpg") center/cover;
 }
 
 .cartas-blog:after {
