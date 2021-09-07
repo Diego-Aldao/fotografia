@@ -716,7 +716,7 @@ img {
 }
 
 .header-verano {
-  background: url("../images/pag-sec-verano/verano-header.jpg") center/cover;
+  background: url("../images/pag-sec-verano/verano-header.webp") center/cover;
 }
 
 @-webkit-keyframes bounce3 {
