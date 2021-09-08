@@ -1545,7 +1545,7 @@ img {
 
 @media (min-width: 1024px) {
   .equipo .cartas-equipo {
-    background: url("../images/pag-sec-nosotros/page-about3.jpg") center/cover;
+    background: url("../images/pag-sec-nosotros/nosotros-01.webp") center/cover;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1582,13 +1582,13 @@ img {
     margin-bottom: 30px;
   }
   .equipo .cartas-equipo:nth-child(2) {
-    background: url("../images/pag-sec-nosotros/page-about4.jpg") center/cover;
+    background: url("../images/pag-sec-nosotros/nosotros-02.webp") center/cover;
   }
   .equipo .cartas-equipo:nth-child(3) {
-    background: url("../images/pag-sec-nosotros/page-about5.jpg") center/cover;
+    background: url("../images/pag-sec-nosotros/nosotros-03.webp") center/cover;
   }
   .equipo .cartas-equipo:nth-child(4) {
-    background: url("../images/pag-sec-nosotros/page-about6.jpg") center/cover;
+    background: url("../images/pag-sec-nosotros/nosotros-04.webp") center/cover;
   }
   .equipo .cartas-equipo::after {
     content: "";
