@@ -309,18 +309,30 @@ img {
 
 @-webkit-keyframes bounce {
   0% {
-    left: 5px;
+    right: 5px;
   }
   50% {
-    left: 0px;
+    right: 0px;
   }
   100% {
-    left: 5px;
+    right: 5px;
   }
 }
 
 @keyframes bounce {
   0% {
+    right: 5px;
+  }
+  50% {
+    right: 0px;
+  }
+  100% {
+    right: 5px;
+  }
+}
+
+@-webkit-keyframes bounce2 {
+  0% {
     left: 5px;
   }
   50% {
@@ -331,27 +343,15 @@ img {
   }
 }
 
-@-webkit-keyframes bounce2 {
-  0% {
-    right: 5px;
-  }
-  50% {
-    right: 0px;
-  }
-  100% {
-    right: 5px;
-  }
-}
-
 @keyframes bounce2 {
   0% {
-    right: 5px;
+    left: 5px;
   }
   50% {
-    right: 0px;
+    left: 0px;
   }
   100% {
-    right: 5px;
+    left: 5px;
   }
 }
 

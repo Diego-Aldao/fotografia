@@ -260,17 +260,6 @@ img {
 //ANIMATION FLECHAS HEADER PRINCIPAL
 @keyframes bounce {
   0% {
-    left: 5px;
-  }
-  50% {
-    left: 0px;
-  }
-  100% {
-    left: 5px;
-  }
-}
-@keyframes bounce2 {
-  0% {
     right: 5px;
   }
   50% {
@@ -278,6 +267,17 @@ img {
   }
   100% {
     right: 5px;
+  }
+}
+@keyframes bounce2 {
+  0% {
+    left: 5px;
+  }
+  50% {
+    left: 0px;
+  }
+  100% {
+    left: 5px;
   }
 }
 //LA UNICA MANERA DE REEMPLAZAR LOS ESTILOS DE LOS BOTONES ES CON !IMPORTANT
