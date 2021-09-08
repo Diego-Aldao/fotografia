@@ -2,15 +2,38 @@
 const btnMenu = document.querySelector(".flotante-menu");
 const btnCerrar = document.querySelector(".flotante-menu-movil");
 const navMovil = document.querySelector(".menu-movil");
+const dropMenu = document.querySelector(".drop-menu");
+const linkTrabajos = document.querySelector(".link-trabajos");
 
 const abrirMenu = () => {
-  navMovil.style.display = "block";
+  gsap.to(navMovil, {
+    duration: 0.2,
+    display: "block",
+    opacity: 1,
+  });
 };
 const cerrarMenu = () => {
-  navMovil.style.display = "none";
+  gsap.to(navMovil, {
+    duration: 0.1,
+    display: "none",
+    opacity: 0,
+  });
+};
+
+const abrirDrop = () => {
+  if (dropMenu.style.height == "auto") {
+    gsap.to(dropMenu, {
+      height: "0px",
+    });
+  } else {
+    gsap.to(dropMenu, {
+      height: "auto",
+    });
+  }
 };
 btnMenu.addEventListener("click", abrirMenu);
 btnCerrar.addEventListener("click", cerrarMenu);
+linkTrabajos.addEventListener("click", abrirDrop);
 
 //API INTESERCTION OBSERVER
 const crearObservador = (animacion, nuevaClase) => {

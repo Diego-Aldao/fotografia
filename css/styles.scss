@@ -9,8 +9,8 @@
   src: url("../fonts/Cardo-Regular.ttf");
   font-display: fallback;
 }
-$fuente-principal: "Cardo";
-$fuente-light: "Cardo-Light";
+$fuente-principal: "Cardo", sans-serif;
+$fuente-light: "Cardo-Light", sans-serif;
 
 //COLORES
 $color-blanco: #fff;
@@ -301,10 +301,11 @@ img {
   height: 100%;
   top: 0;
   left: 0;
-  position: absolute;
+  position: fixed;
   z-index: 999999;
   background: white;
   display: none;
+  opacity: 0;
   .barra-superior {
     width: 100%;
     padding: 20px 20px 0px;
@@ -346,6 +347,22 @@ img {
     text-transform: capitalize;
     font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 800;
+  }
+  .link-nav:nth-child(1) {
+    @include flexbox(column, center, flex-start);
+  }
+  .drop-menu {
+    @include flexbox(column, center, flex-start);
+    color: black;
+    height: 0px;
+    overflow: hidden;
+  }
+  .links-drop {
+    font-size: clamp(1rem, 3vw, 1.3rem);
+    padding: 5px 0px;
+  }
+  .links-drop:nth-child(1) {
+    margin-top: 10px;
   }
 }
 

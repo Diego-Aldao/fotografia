@@ -22,7 +22,7 @@
 
 body {
   overflow-x: hidden;
-  font-family: "Cardo";
+  font-family: "Cardo", sans-serif;
   font-weight: normal;
 }
 
@@ -102,7 +102,7 @@ img {
 .btn-form {
   min-height: 50px;
   padding: 10px 40px;
-  font-family: "Cardo";
+  font-family: "Cardo", sans-serif;
   background: none;
   border: 1px solid #919191;
   border-radius: 3px;
@@ -378,10 +378,11 @@ img {
   height: 100%;
   top: 0;
   left: 0;
-  position: absolute;
+  position: fixed;
   z-index: 999999;
   background: white;
   display: none;
+  opacity: 0;
 }
 
 .menu-movil .barra-superior {
@@ -482,6 +483,50 @@ img {
   text-transform: capitalize;
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 800;
+}
+
+.menu-movil .link-nav:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.menu-movil .drop-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: black;
+  height: 0px;
+  overflow: hidden;
+}
+
+.menu-movil .links-drop {
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  padding: 5px 0px;
+}
+
+.menu-movil .links-drop:nth-child(1) {
+  margin-top: 10px;
 }
 
 @media (min-width: 768px) {
@@ -1175,7 +1220,7 @@ img {
   color: black;
   font-weight: lighter;
   font-size: clamp(2.8rem, 7vw, 6.5rem);
-  font-family: "Cardo-Light";
+  font-family: "Cardo-Light", sans-serif;
 }
 
 .header-nosotros .subtitulo {
@@ -1191,7 +1236,7 @@ img {
   text-align: center;
   line-height: 1.5;
   margin: 0;
-  font-family: "Cardo-Light";
+  font-family: "Cardo-Light", sans-serif;
 }
 
 .header-nosotros .link-menu-desktop {
@@ -1460,7 +1505,7 @@ img {
 .equipo .pie-seccion {
   max-width: 750px;
   font-size: clamp(1.5rem, 2.2vw, 2rem);
-  font-family: "Cardo-Light";
+  font-family: "Cardo-Light", sans-serif;
 }
 
 .equipo .pie-seccion::first-letter {
@@ -1719,7 +1764,7 @@ img {
   border-bottom: 1px solid #919191;
   margin-bottom: 25px;
   resize: none;
-  font-family: "Cardo";
+  font-family: "Cardo", sans-serif;
   outline: none;
 }
 
@@ -1810,7 +1855,7 @@ img {
   font-size: clamp(1.6rem, 3.3vw, 2.6rem);
   margin-bottom: 20px;
   z-index: 1;
-  font-family: "Cardo-Light";
+  font-family: "Cardo-Light", sans-serif;
 }
 
 .cartas-blog .datos-carta {
