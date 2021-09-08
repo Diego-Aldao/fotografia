@@ -90,6 +90,61 @@ img {
           animation: progress-animation 2s linear infinite;
 }
 
+.menu-desk {
+  height: 30px;
+  overflow: hidden;
+}
+
+.menu-desk .lista-nav {
+  width: 280px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-desk .lista-desk {
+  height: 30px;
+}
+
+.menu-desk .lista-trabajos-nav {
+  width: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu-desk .lista-trabajos-nav .link-nav {
+  width: auto;
+  margin: 5px 25px 5px 0px;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  position: relative;
+  text-align: center;
+}
+
 .copy:hover .texto-1 {
   margin-top: -20px;
 }
@@ -577,24 +632,7 @@ img {
     top: 80px;
     display: block;
   }
-  .lista-nav {
-    width: 280px;
-    height: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .link-nav {
+  .flotante-menu-desktop .link-nav {
     text-transform: capitalize;
     font-size: 0.9rem;
   }
@@ -807,9 +845,10 @@ img {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
   .headers-secundarios .navegacion-paginas-secundarias {
     padding: 60px 100px 0px;
+    height: 130px;
   }
   .headers-secundarios .menu-movil-pag-sec {
     display: none;
@@ -836,7 +875,6 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 280px;
-    padding-top: 20px;
   }
   .headers-secundarios .link-menu-desktop {
     color: white;

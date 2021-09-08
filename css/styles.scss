@@ -100,6 +100,31 @@ img {
   background-size: 300% 100%;
   animation: progress-animation 2s linear infinite;
 }
+.menu-desk {
+  height: 30px;
+  overflow: hidden;
+  .lista-nav {
+    width: 280px;
+    height: 20px;
+    @include flexbox(row, center, space-between);
+  }
+  .lista-desk {
+    height: 30px;
+  }
+  .lista-trabajos-nav {
+    width: 280px;
+    @include flexbox(row, center, flex-start);
+    flex-wrap: wrap;
+    .link-nav {
+      width: auto;
+      margin: 5px 25px 5px 0px;
+      text-transform: capitalize;
+      font-size: 0.9rem;
+      position: relative;
+      text-align: center;
+    }
+  }
+}
 
 .copy:hover {
   .texto-1 {
@@ -420,17 +445,13 @@ img {
     right: 100px;
     top: 80px;
     display: block;
-  }
-  .lista-nav {
-    width: 280px;
-    height: 20px;
-    @include flexbox(row, center, space-between);
-  }
-  .link-nav {
-    text-transform: capitalize;
-    font-size: 0.9rem;
+    .link-nav {
+      text-transform: capitalize;
+      font-size: 0.9rem;
+    }
   }
 }
+
 @media (min-width: 1440px) {
   .flotante-logo {
     top: 100px;
@@ -567,10 +588,11 @@ img {
     }
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
   .headers-secundarios {
     .navegacion-paginas-secundarias {
       padding: 60px 100px 0px;
+      height: 130px;
     }
     .menu-movil-pag-sec {
       display: none;
@@ -585,7 +607,6 @@ img {
     .links-menu-desktop {
       @include flexbox(row, flex-start, space-between);
       width: 280px;
-      padding-top: 20px;
     }
     .link-menu-desktop {
       color: white;

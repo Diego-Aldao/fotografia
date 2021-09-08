@@ -35,6 +35,33 @@ btnMenu.addEventListener("click", abrirMenu);
 btnCerrar.addEventListener("click", cerrarMenu);
 linkTrabajos.addEventListener("click", abrirDrop);
 
+//NAVEGACION DESKTOP
+const linkTrabajosDesk = document.querySelector(".link-trabajos-desktop");
+const menuDesk = document.querySelector(".menu-desk");
+const listaNav = document.querySelector(".lista-desk");
+
+linkTrabajosDesk.addEventListener("mouseover", () => {
+  gsap.to(menuDesk, {
+    height: "60px",
+    duration: 0.3,
+  });
+  gsap.to(listaNav, {
+    margin: "-35px 0px 0px",
+    duration: 0.3,
+  });
+  console.log("ad");
+});
+menuDesk.addEventListener("mouseleave", () => {
+  gsap.to(menuDesk, {
+    height: "35px",
+    duration: 0.3,
+  });
+  gsap.to(listaNav, {
+    margin: "0px 0px 0px",
+    duration: 0.3,
+  });
+});
+
 //API INTESERCTION OBSERVER
 const crearObservador = (animacion, nuevaClase) => {
   const secciones = document.querySelectorAll(animacion);
