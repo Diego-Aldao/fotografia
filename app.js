@@ -11,17 +11,19 @@ window.onload = () => {
         prevEl: ".swiper-button-prev",
       },
     });
-    var swiper = new Swiper(".swiper", {
-      centeredSlides: true,
-      spaceBetween: 100,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
   }
 };
+if (document.body.id === "pagina-trabajo") {
+  var swiper = new Swiper(".swiper", {
+    centeredSlides: true,
+    spaceBetween: 100,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+}
 //API INTESERCTION OBSERVER
 const crearObservador = (animacion, nuevaClase) => {
   const secciones = document.querySelectorAll(animacion);
