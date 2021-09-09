@@ -1,5 +1,5 @@
 window.onload = () => {
-  //SWIPER
+  //SWIPER PAGINA INICIO
   if (document.body.id === "inicio") {
     var swiper = new Swiper(".header-principal", {
       speed: 1500,
@@ -13,6 +13,7 @@ window.onload = () => {
     });
   }
 };
+//SWIPER PAGINAS TRABAJO
 if (document.body.id === "pagina-trabajo") {
   var swiper = new Swiper(".swiper", {
     centeredSlides: true,
@@ -49,8 +50,6 @@ const crearObservador = (animacion, nuevaClase) => {
 };
 crearObservador(".animacion-uno", "final-uno");
 crearObservador(".animacion-dos", "final-dos");
-crearObservador(".animacion-tres", "final-tres");
-crearObservador(".animacion-cuatro", "final-cuatro");
 
 //NAVEGACION MOVIL
 const btnMenu = document.querySelector(".flotante-menu");

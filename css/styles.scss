@@ -100,6 +100,7 @@ img {
   background-size: 300% 100%;
   animation: progress-animation 2s linear infinite;
 }
+
 .menu-desk {
   height: 30px;
   overflow: hidden;
@@ -149,8 +150,24 @@ img {
   font-size: 0.9rem;
   cursor: pointer;
 }
-//INICIO CONTENIDO PRINCIPAL
 
+//ANIMACIONES INTERSECTION OBSERVER
+.animacion-uno {
+  margin-top: 200px;
+  position: relative;
+  transition: all 1.5s ease-in-out;
+}
+.final-uno {
+  margin-top: 0px;
+}
+.animacion-dos {
+  transition: all 1.8s ease-in-out;
+}
+.final-dos {
+  height: 0px;
+}
+
+//INICIO CONTENIDO PRINCIPAL
 //HEADER PAGINA PRINCIPAL
 .media {
   img {
@@ -208,7 +225,6 @@ img {
   height: 40px;
   width: 15px;
 }
-
 .flotante-redes {
   position: relative;
   z-index: 99;
@@ -242,15 +258,6 @@ img {
   }
 }
 
-.animacion-uno {
-  margin-top: 200px;
-  position: relative;
-  transition: all 1.5s ease-in-out;
-}
-.final-uno {
-  margin-top: 0px;
-}
-
 .cover-header {
   position: fixed;
   top: 0px;
@@ -259,12 +266,6 @@ img {
   height: 100vh;
   z-index: 9099;
   background: black;
-}
-.animacion-dos {
-  transition: all 1.8s ease-in-out;
-}
-.final-dos {
-  height: 0px;
 }
 
 .swiper-button-next {
@@ -451,7 +452,6 @@ img {
     }
   }
 }
-
 @media (min-width: 1440px) {
   .flotante-logo {
     top: 100px;
@@ -476,7 +476,7 @@ img {
 
 //INICIO PAGINAS SECUNDARIAS
 
-//PAGINA AUDI
+//PAGINAS TRABAJOS
 
 .headers-secundarios {
   background: url("../images/pag-sec-audi/audi-header.webp") center / cover;
@@ -537,6 +537,19 @@ img {
     }
   }
 }
+@keyframes bounce3 {
+  0% {
+    top: 5px;
+  }
+  50% {
+    top: 0px;
+  }
+  100% {
+    top: 5px;
+  }
+}
+
+//HEADERS PAGINAS TRABAJOS
 .header-trabajos {
   .link-nav {
     color: white;
@@ -561,17 +574,6 @@ img {
 .header-verano {
   background: url("../images/pag-sec-verano/verano-header.webp") center / cover;
 }
-@keyframes bounce3 {
-  0% {
-    top: 5px;
-  }
-  50% {
-    top: 0px;
-  }
-  100% {
-    top: 5px;
-  }
-}
 .headers-secundarios:after {
   content: "";
   width: 100%;
@@ -582,7 +584,7 @@ img {
   background: rgba(0, 0, 0, 0.11);
 }
 
-//QUERYS HEADERS SECUNDARIOS
+//QUERYS HEADERS TRABAJOS
 @media (min-width: 768px) {
   .headers-secundarios {
     .navegacion-paginas-secundarias {
@@ -634,7 +636,8 @@ img {
     }
   }
 }
-//INICIO CONTENIDO PRINCIPAL PAG-SEC
+
+//INICIO CONTENIDO PRINCIPAL PAGINAS TRABAJOS
 .contenido-principal {
   background: black;
   .header-contenido-principal {
@@ -663,7 +666,7 @@ img {
   }
 }
 
-//INICIO SECCION SWIPER PAG-SEC
+//INICIO SECCION SWIPER PAGINAS TRABAJOS
 .swiper-pag-sec {
   background: black;
   width: 100%;
@@ -686,10 +689,11 @@ img {
 .swiper-pagination-bullet-active {
   opacity: 1;
 }
-//INICIO SECCION MEDIA
+//INICIO SECCION MEDIA PAGINAS TRABAJOS
 .seccion-media {
   background: black;
 }
+//QUERYS SECCION MEDIA PAGINAS TRABAJOS
 @media (min-width: 1024px) {
   .seccion-media {
     .contenedor-gral {
@@ -701,7 +705,7 @@ img {
   }
 }
 
-//INICIO SECCION GRID
+//INICIO SECCION GRID PAGINAS TRABAJOS
 .grid {
   background: black;
   padding: 100px 10px 0px;
@@ -723,6 +727,8 @@ img {
     grid-column: 1 / 3;
   }
 }
+
+//QUERYS GRID PAGINAS TRABAJOS
 @media (min-width: 500px) {
   .grid {
     padding: 100px 20px 0px;
@@ -746,12 +752,12 @@ img {
   }
 }
 
-//INICIO SECCION MEDIA DOS
+//INICIO SECCION MEDIA DOS PAGINAS TRABAJOS
 .seccion-media-dos {
   background: black;
 }
 
-//INICIO SECCION ILUSTRACION
+//INICIO SECCION ILUSTRACION PAGINAS TRABAJOS
 .ilustracion {
   background: black;
   .img-final {
@@ -760,8 +766,7 @@ img {
   }
 }
 
-//INICIO FOOTER PAG-SEC
-
+//INICIO FOOTER PAGINAS TRABAJOS
 .footer-secundario {
   background: black;
   width: 100%;
@@ -782,6 +787,7 @@ img {
   }
 }
 
+//QUERYS FOOTER PAGINAS TRABAJOS
 @media (min-width: 1024px) {
   .footer-secundario {
     .contenedor-gral {
@@ -803,7 +809,6 @@ img {
 }
 
 //FLOTANTES
-
 .flotante-up {
   position: fixed;
   width: 30px;
@@ -847,6 +852,7 @@ img {
 
 //INICIO NOSOTROS
 
+//HEADER NOSOTROS
 .header-nosotros {
   width: 100%;
   height: auto;
@@ -921,7 +927,6 @@ img {
 }
 
 //INICIO SECCION SERVICIOS-CLIENTES
-
 .header-servicios-clientes {
   .textos-comunes {
     font-size: 1.2rem;
@@ -1158,7 +1163,6 @@ img {
 }
 
 //INICIO SECCION CLIENTES
-
 .grid-clientes {
   display: grid;
   grid-template-columns: 1fr;
@@ -1175,8 +1179,7 @@ img {
   }
 }
 
-//INICIO QUERYS CLIENTES
-
+//QUERYS CLIENTES
 @media (min-width: 768px) {
   .grid-clientes {
     grid-template-columns: 1fr 1fr;
@@ -1191,7 +1194,6 @@ img {
 }
 
 //INICIO FOOTER NOSOTROS
-
 .footer-nosotros {
   background: white;
   .texto-copy {
@@ -1276,7 +1278,7 @@ img {
   }
 }
 
-//QURYS FORMULARIO
+//QUERYS FORMULARIO
 @media (min-width: 768px) {
   .form-contacto {
     @include flexbox(row, center, space-between);

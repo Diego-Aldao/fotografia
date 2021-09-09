@@ -167,6 +167,26 @@ img {
   cursor: pointer;
 }
 
+.animacion-uno {
+  margin-top: 200px;
+  position: relative;
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.final-uno {
+  margin-top: 0px;
+}
+
+.animacion-dos {
+  -webkit-transition: all 1.8s ease-in-out;
+  transition: all 1.8s ease-in-out;
+}
+
+.final-dos {
+  height: 0px;
+}
+
 .media img {
   -webkit-filter: brightness(0.8);
           filter: brightness(0.8);
@@ -316,17 +336,6 @@ img {
   width: 100%;
 }
 
-.animacion-uno {
-  margin-top: 200px;
-  position: relative;
-  -webkit-transition: all 1.5s ease-in-out;
-  transition: all 1.5s ease-in-out;
-}
-
-.final-uno {
-  margin-top: 0px;
-}
-
 .cover-header {
   position: fixed;
   top: 0px;
@@ -335,15 +344,6 @@ img {
   height: 100vh;
   z-index: 9099;
   background: black;
-}
-
-.animacion-dos {
-  -webkit-transition: all 1.8s ease-in-out;
-  transition: all 1.8s ease-in-out;
-}
-
-.final-dos {
-  height: 0px;
 }
 
 .swiper-button-next {
@@ -778,6 +778,30 @@ img {
           animation: bounce3 1s infinite;
 }
 
+@-webkit-keyframes bounce3 {
+  0% {
+    top: 5px;
+  }
+  50% {
+    top: 0px;
+  }
+  100% {
+    top: 5px;
+  }
+}
+
+@keyframes bounce3 {
+  0% {
+    top: 5px;
+  }
+  50% {
+    top: 0px;
+  }
+  100% {
+    top: 5px;
+  }
+}
+
 .header-trabajos .link-nav {
   color: white;
 }
@@ -804,30 +828,6 @@ img {
 
 .header-verano {
   background: url("../images/pag-sec-verano/verano-header.webp") center/cover;
-}
-
-@-webkit-keyframes bounce3 {
-  0% {
-    top: 5px;
-  }
-  50% {
-    top: 0px;
-  }
-  100% {
-    top: 5px;
-  }
-}
-
-@keyframes bounce3 {
-  0% {
-    top: 5px;
-  }
-  50% {
-    top: 0px;
-  }
-  100% {
-    top: 5px;
-  }
 }
 
 .headers-secundarios:after {
