@@ -151,22 +151,6 @@ img {
   cursor: pointer;
 }
 
-//ANIMACIONES INTERSECTION OBSERVER
-.animacion-uno {
-  margin-top: 200px;
-  position: relative;
-  transition: all 1.5s ease-in-out;
-}
-.final-uno {
-  margin-top: 0px;
-}
-.animacion-dos {
-  transition: all 1.8s ease-in-out;
-}
-.final-dos {
-  height: 0px;
-}
-
 //INICIO CONTENIDO PRINCIPAL
 //HEADER PAGINA PRINCIPAL
 .media {
@@ -266,6 +250,21 @@ img {
   height: 100vh;
   z-index: 9099;
   background: black;
+}
+//ANIMACIONES INTERSECTION OBSERVER
+.animacion-uno {
+  margin-top: 200px;
+  position: relative;
+  transition: all 1.5s ease-in-out;
+}
+.final-uno {
+  margin-top: 0px;
+}
+.animacion-dos {
+  transition: all 1.8s ease-in-out;
+}
+.final-dos {
+  height: 0px;
 }
 
 .swiper-button-next {
