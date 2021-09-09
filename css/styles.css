@@ -1184,6 +1184,7 @@ img {
   bottom: 20px;
   right: 20px;
   z-index: 99;
+  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1197,46 +1198,48 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: none;
+  opacity: 0;
 }
 
 .flotante-up i {
   position: relative;
   font-size: 0.7rem;
-  -webkit-animation: bounce4 1s infinite;
-          animation: bounce4 1s infinite;
+  -webkit-animation: bounce4 0.6s infinite;
+          animation: bounce4 0.6s infinite;
 }
 
 @-webkit-keyframes bounce4 {
   0% {
-    bottom: 5px;
+    bottom: 2px;
   }
   50% {
-    bottom: -5px;
+    bottom: -2px;
   }
   100% {
-    bottom: 5px;
+    bottom: 2px;
   }
 }
 
 @keyframes bounce4 {
   0% {
-    bottom: 5px;
+    bottom: 2px;
   }
   50% {
-    bottom: -5px;
+    bottom: -2px;
   }
   100% {
-    bottom: 5px;
+    bottom: 2px;
   }
 }
 
 @media (min-width: 1024px) {
   .flotante-up {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
   }
   .flotante-up i {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
