@@ -1,11 +1,11 @@
 //TIPOGRAFIAS
 @font-face {
-  font-family: Cardo;
+  font-family: "Cardo";
   src: url("../fonts/Cardo-Bold.ttf");
   font-display: fallback;
 }
 @font-face {
-  font-family: Cardo-Light;
+  font-family: "Cardo-Light";
   src: url("../fonts/Cardo-Regular.ttf");
   font-display: fallback;
 }
@@ -193,6 +193,16 @@ img {
   font-size: clamp(2rem, 5vw, 5.1rem);
   text-transform: capitalize;
   position: relative;
+}
+
+.titulo-principal {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 50%;
 }
 .año {
   font-size: clamp(0.8rem, 2vw, 1rem);
